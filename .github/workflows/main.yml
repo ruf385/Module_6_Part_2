@@ -10,7 +10,7 @@ on:
 
 
 jobs:
-  job1:
+  Part1:
     runs-on: ubuntu-latest
     environment: prod  
     outputs:
