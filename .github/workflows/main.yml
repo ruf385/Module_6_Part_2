@@ -12,7 +12,7 @@ on:
 jobs:
   Part1:
     runs-on: ubuntu-latest
-    environment: prod  
+    environment: Prod  
     outputs:
       my-output: ${{ steps.set-output.outputs.text }}
     steps:
@@ -23,4 +23,4 @@ jobs:
       - name: Echo environment secret and variable
         run: |
           echo "Secret Password: ${{ secrets.MY_SECRET }}"
-          echo "Variable Code: ${{ vars.MY_VARIABLE }}"
+          echo "Variable: ${{ vars.MY_VARIABLE }}"
